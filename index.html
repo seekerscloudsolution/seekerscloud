@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>DashBoard</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link type="text/css" rel="stylesheet" href="booostrap/boostrap/bootstrap.min.css">
+        <link type="text/css" rel="stylesheet" href="css/default.css">
+        <link type="text/css" rel="stylesheet" href="booostrap/boostrap/bootstrap.css">
+        <link type="text/css" rel="stylesheet" href="choosen/chosen.min.css">
+        <link type="text/css" rel="stylesheet" href="summernote/summernote.css">
+        <link type="text/css" rel="stylesheet" href="fontawsome/fontawesome.min.css">
+    </head>
+    <body>
+        <div class="container-fluid ">
+            <div  class="row display-table-row">
+                <!-- Side Menu...................-->
+                <div class="col-md-2 col-sm-1 col-xs-2 valign-top hidden-xs" id="side-menu">
+                    <h1 class="hidden-sm hidden-xs" style="background-image: url('image/A.png')"><marquee><b>Institute Of Java Software Engineer</b></marquee></h1>
+                    <ul>
+                        <li class="link  active">
+                            <a href="#" id="mainmenu">
+                                <span class="th" aria-hidden="true"><img src="image/Thumbnails_48px.png"></span>
+                                <span class="hidden-sm hidden-xs">Dashboard</span>
+                            </a>
+                        </li>
+
+
+                        <li class="link"> 
+                            <a href="#collase-post" data-toggle="collapse" aria-controls="collapse-post" id="showarticle">
+                                <span class="th"> <img src="image/icons8_Wish_List_50px.png"></span>
+                                <span class="hidden-sm hidden-xs">Article</span>
+                                <span class="label label-success pull-right hidden-sm hidden-xs">20</span>
+                            </a>
+                            <ul class="collapse collapseble" id="collapse-post">
+                                <li><a href="#" id="createnew">Create New</a></li>
+                                <li><a href="#" id="viewarticle">View Article</a></li>
+                            </ul>
+                        </li>
+
+
+                        <li class="link"> 
+                            <a href="#collase-comments" data-toggle="collapse" aria-controls="collapse-post" id="showcoments">
+                                <span class="th"> <img src="image/icons8_Pencil_48px.png"></span>
+                                <span class="hidden-sm hidden-xs">Comments</span>
+
+                            </a>
+                            <ul class="collapse collapseble" id="collapse-comment">
+                                <li><a href="#" id="approved">Approved
+                                        <span class="label label-success pull-right hidden-sm hidden-xs" >30</span>
+                                    </a></li>
+                                <li><a href="#" id="unapproved">UnApproved
+                                        <span class="label label-warning pull-right hidden-sm hidden-xs" >30</span>
+                                    </a></li>
+                            </ul>
+                        </li>
+
+                        <li class="link">
+                            <a href="#" id="loadcomments">
+                                <span class="th" aria-hidden="true"><img src="image/icons8_User_48px.png"></span>
+                                <span class="hidden-sm hidden-xs">commenter's</span>
+                            </a>
+                        </li>
+
+
+                        <li class="link">
+                            <a href="#" id="openttags">
+                                <span class="th" aria-hidden="true"><img src="image/icons8_Price_Tag_52px_1.png"></span>
+                                <span class="hidden-sm hidden-xs">Tags</span>
+                            </a>
+                        </li>
+
+
+                        <li class="link settings-btn">
+                            <a href="#" id="loadsetting">
+                                <span class="th" aria-hidden="true"><img src="image/icons8_Slider__64px.png"></span>
+                                <span class="hidden-sm hidden-xs">Setting</span>
+                            </a>
+                        </li>
+
+
+                        <li class="link ">
+                            <a href="#" id="loadchart">
+                                <span class="th" aria-hidden="true"><img src="image/icons8_Combo_Chart_52px_1.png"></span>
+                                <span class="hidden-sm hidden-xs">Chart</span>
+                            </a>
+                        </li>
+
+                        <li class="link" style="border-bottom: 1px solid #ffff00;">
+                            <a href="#" id="loadmydata">
+                                <span class="th" aria-hidden="true"><img src="image/icons8_Info_52px.png"></span>
+                                <span class="hidden-sm hidden-xs">About Me</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="row">
+                        <span>
+                            <img src="image/255px-Flag_of_Sri_Lanka.svg.png" class="img-circle" id="image1" alt="srilanka">
+                            <img src="image/4481-004-660915ED.jpg" class="img-circle" id="image2" alt="america"></span>
+                    </div>
+
+
+                </div>
+                <!-- Main Content Aria............-->
+                <div class="col-md-10 col-sm-11 col-xs-10 box valign-top">
+                    <div class="row">
+                        <header id="nav-header" class="clearfix">
+                            <div class="col-md-5">
+                                <nav class="navbar-default">
+                                    <button type="button" class="navbar-toggle pull-left" data-toggle="offcanvas" data-target="#bs-example" id="showleftside">
+                                        <span class="sr-only">Toggle Navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+
+                                </nav>
+                                <input class="hidden-xs hidden-sm" type="text" id="header-search-field" placeholder="search for anything..">
+                            </div>
+                            <div class="col-md-7">
+                                <ul class="pull-right">
+                                    <li id="welcome" class="hidden-sm hidden-xs">This Is Administrator Aria</li>
+                                    <li class="fixed-width">
+                                        <a href="#">
+                                            <span class="th" aria-hidden="true"><img src="image/icons8_Bell_48px.png"></span>
+                                            <span class="label label-warning">3</span>
+                                        </a>
+                                    </li>
+
+                                    <li class="fixed-width">
+                                        <a href="#">
+                                            <span class="th" aria-hidden="true"><img src="image/icons8_Message_50px_1.png"></span>
+                                            <span class="label label-primary">3</span>
+                                        </a>
+                                    </li>
+
+
+                                    <li>
+                                        <a href="#" class="logot"> 
+                                            <span class="th" aria-hidden="true"><img src="image/icons8_Exit_52px.png"></span>
+                                            Log Out..
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </header>
+                    </div>
+                    <!--new article aria....-->
+
+                    <div class="collapse" id="new-article">
+                        <header>
+                            <h2 class="pagetitle">Create new article</h2>
+
+                        </header>
+                        <div class="content-inner">
+                            <div class="from-wrapper">
+                                <form>
+                                    <div class="form-group">
+                                        <label class="sr-only">Title</label>
+                                        <input type="text" class="form-control" id="text" placeholder="Title">
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="sr-only">Tags</label>
+                                        <select  multiple name="tags" class="form-control chosen-select">
+                                            <option>php</option>
+                                            <option>html</option>
+                                            <option>Css</option>
+                                            <option>coding</option>
+                                            <option>programming</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label class="sr-only">Article</label>
+                                        <textarea class="form-control summernote" placeholder="Article" name="article">
+                                            
+                                        </textarea>
+                                    </div>
+                                    <div class="checkbox"> 
+                                        <label>
+                                            <input type="checkbox">publish article when i click on save
+                                        </label>
+                                    </div>
+                                    <div class="clearfix">
+                                        <button type="submit" class="btn btn-primary pull-right">Save / Publish</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--end article aria....-->
+
+                    <!-- Start articles aria....-->
+                    <div class="content collapse" id="article">
+                        <header class="clearfix">
+                            <h2 class="pagetitle pull-left">All articles</h2>
+                            <button type="button" class="btn btn-xs btn-primary pull-right" id="createnewfilebtn">Create New Article</button>
+                        </header>
+
+                        <div class="content-inner">
+                            <div class="row search-row">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-field" id="search">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-primary">
+                                                GO!
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row article-row">
+                                <div class="col-md-1 col-xs-2 col-sm-1 status-padding">
+                                    <span class="label label-success label-lsm">
+                                        Active
+                                    </span>  
+                                </div>
+
+                                <div class="col-md-8 col-xs-10 col-sm-6">
+                                    <p>
+                                        America Is The Best of the world...<br>
+                                        <small class="article-title">IJSE panadura @ 2018-09-30..</small>
+                                    </p>
+                                </div>
+
+                                <div class="col-md-3 col-xs-10 col-sm-5 col-xs-offset-2">
+                                    <div class="article-action">
+                                        <a class="btn btn-xs btn-default" href="#" role="button">
+                                            <span aria-hidden="true" id="th2">
+                                                <img src="image/icons8_Open_Folder_in_New_Tab_50px.png">
+                                                &nbsp;View
+                                            </span>
+                                        </a>
+
+                                        <a class="btn btn-xs btn-default" href="#" role="button">
+                                            <span aria-hidden="true" id="th2">
+                                                <img src="image/icons8_Edit_52px.png">
+                                                &nbsp;Edit
+                                            </span>
+                                        </a>
+
+                                        <a class="btn btn-xs btn-default" href="#" role="button">
+                                            <span aria-hidden="true" id="th2">
+                                                <img src="image/icons8_Delete_Database_52px.png">
+                                                &nbsp;Delete
+                                            </span>
+                                        </a>
+                                    </div>
+                                </div>
+                                <hr>
+                            </div>
+                            <hr>
+
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <nav>
+                                        <ul class="pagination">
+                                            <li><a href="#">&laquo;</a></li>
+                                            <li><a href="#">1</a></li>
+                                            <li><a href="#">2</a></li>
+                                            <li><a href="#">3</a></li>
+                                            <li><a href="#">4</a></li>
+                                            <li><a href="#">5</a></li>
+                                            <li><a href="#">&raquo;</a></li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <!-- End articles aria....-->
+
+                    <!--start Aproved Aria-->
+
+                    <div class="content collapse approved" id="article">
+                        <header class="clearfix">
+                            <h2 class="pagetitle pull-left">All Approved</h2>
+                            <button type="button" class="btn btn-xs btn-primary pull-right" id="createnewfilebtn">Create New Article</button>
+                        </header>
+
+                        <div class="content-inner">
+                            <div class="row search-row">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-field" id="search">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-primary">
+                                                GO!
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row comment-row">
+                                <div class="col-sm-2 col-md-1">
+                                    <img src="image/hasika.jpg" class="img-circle" id="myimag">
+                                </div>&nbsp;
+
+                                <div class="col-sm-10 col-md-11">
+                                    <div class="row">
+                                        <div class="col-xs-9 col-sm-10 col-md-9">
+                                            <b>Hasika Sandaruwan</b>Posted For Proggrmers.org<b>hasika</b><br>
+                                            <small>Today 2:21 pm - 01/01/2020 </small>
+                                        </div>
+
+                                        <div class="col-xs-3 col-md-3 col-sm-2">
+
+                                            <div class="clearfix">
+                                                <div class="pull-right comment-age">10 Days Ago..</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="well well-sm comments-well">
+                                        <p>
+                                            Design Patterns Java(TM) Workbook features the twenty-three foundational design patterns
+                                            introduced in the classic book Design Patterns (Addison-Wesley, 1995). In this new, hands-on
+                                            workbook, the patterns are organized into five major categories: interfaces, responsibility,
+                                            construction, operations, and extensions. Each category begins with a chapter that reviews and
+                                            challenges your ability to apply facilities built into Java. These introductory sections are
+                                            followed by chapters that explain a particular pattern in detail, demonstrate the pattern in use
+                                            with UML diagrams and Java code, and provide programming problems for you to solve. 
+                                        </p>
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <div class="pull-right">
+                                            <a class="btn btn-warning" href="#">
+                                                <span id="th2">
+                                                    <img src="image/icons8_Thumbs_Down_64px.png">
+                                                </span>
+                                                Un-Approve
+                                            </a>
+
+                                            <a class="btn btn-danger" href="#">
+                                                <span id="th2">
+                                                    <img src="image/icons8_Cancel_52px_1.png">
+                                                </span>
+                                                Delete
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+
+
+
+
+                        </div>
+
+                    </div>
+
+
+                    <!--End Aproved Aria-->
+
+
+                    <!--Start Unaproved-->
+
+
+                    <div class="content collapse unapproved" id="article">
+                        <header class="clearfix">
+                            <h2 class="pagetitle pull-left">All Un-Approved</h2>
+                            <button type="button" class="btn btn-xs btn-primary pull-right" id="createnewfilebtn">Create New Article</button>
+                        </header>
+
+                        <div class="content-inner">
+                            <div class="row search-row">
+                                <div class="col-md-12">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control search-field" id="search">
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-primary">
+                                                GO!
+                                            </button>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row comment-row">
+                                <div class="col-sm-2 col-md-1">
+                                    <img src="image/hasika.jpg" class="img-circle" id="myimag">
+                                </div>&nbsp;
+
+                                <div class="col-sm-10 col-md-11">
+                                    <div class="row">
+                                        <div class="col-xs-9 col-sm-10 col-md-9">
+                                            <b>Hasika Sandaruwan</b>Posted For Proggrmers.org<b>hasika</b><br>
+                                            <small>Today 2:21 pm - 01/01/2020 </small>
+                                        </div>
+
+                                        <div class="col-xs-3 col-md-3 col-sm-2">
+
+                                            <div class="clearfix">
+                                                <div class="pull-right comment-age">10 Days Ago..</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="well well-sm comments-well">
+                                        <p>
+                                            Design Patterns Java(TM) Workbook features the twenty-three foundational design patterns
+                                            introduced in the classic book Design Patterns (Addison-Wesley, 1995). In this new, hands-on
+                                            workbook, the patterns are organized into five major categories: interfaces, responsibility,
+                                            construction, operations, and extensions. Each category begins with a chapter that reviews and
+                                            challenges your ability to apply facilities built into Java. These introductory sections are
+                                            followed by chapters that explain a particular pattern in detail, demonstrate the pattern in use
+                                            with UML diagrams and Java code, and provide programming problems for you to solve. 
+                                        </p>
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <div class="pull-right">
+                                            <a class="btn btn-warning" href="#">
+                                                <span id="th2">
+                                                    <img src="image/icons8_Thumbs_Down_64px.png">
+                                                </span>
+                                                Approve
+                                            </a>
+
+                                            <a class="btn btn-danger" href="#">
+                                                <span id="th2">
+                                                    <img src="image/icons8_Cancel_52px_1.png">
+                                                </span>
+                                                Delete
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+<div class="row comment-row">
+                                <div class="col-sm-2 col-md-1">
+                                    <img src="image/4481-004-660915ED.jpg" class="img-circle" id="myimag">
+                                </div>&nbsp;
+
+                                <div class="col-sm-10 col-md-11">
+                                    <div class="row">
+                                        <div class="col-xs-9 col-sm-10 col-md-9">
+                                            <b>Hasika Sandaruwan</b>Posted For Proggrmers.org<b>hasika</b><br>
+                                            <small>Today 2:21 pm - 01/01/2020 </small>
+                                        </div>
+
+                                        <div class="col-xs-3 col-md-3 col-sm-2">
+
+                                            <div class="clearfix">
+                                                <div class="pull-right comment-age">10 Days Ago..</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="well well-sm comments-well">
+                                        <p>
+                                            Design Patterns Java(TM) Workbook features the twenty-three foundational design patterns
+                                            introduced in the classic book Design Patterns (Addison-Wesley, 1995). In this new, hands-on
+                                            workbook, the patterns are organized into five major categories: interfaces, responsibility,
+                                            construction, operations, and extensions. Each category begins with a chapter that reviews and
+                                            challenges your ability to apply facilities built into Java. These introductory sections are
+                                            followed by chapters that explain a particular pattern in detail, demonstrate the pattern in use
+                                            with UML diagrams and Java code, and provide programming problems for you to solve. 
+                                        </p>
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <div class="pull-right">
+                                            <a class="btn btn-warning" href="#">
+                                                <span id="th2">
+                                                    <img src="image/icons8_Thumbs_Down_64px.png">
+                                                </span>
+                                                Approve
+                                            </a>
+
+                                            <a class="btn btn-danger" href="#">
+                                                <span id="th2">
+                                                    <img src="image/icons8_Cancel_52px_1.png">
+                                                </span>
+                                                Delete
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="row comment-row">
+                                <div class="col-sm-2 col-md-1">
+                                    <img src="image/255px-Flag_of_Sri_Lanka.svg.png" class="img-circle" id="myimag">
+                                </div>&nbsp;
+
+                                <div class="col-sm-10 col-md-11">
+                                    <div class="row">
+                                        <div class="col-xs-9 col-sm-10 col-md-9">
+                                            <b>Hasika Sandaruwan</b>Posted For Proggrmers.org<b>hasika</b><br>
+                                            <small>Today 2:21 pm - 01/01/2020 </small>
+                                        </div>
+
+                                        <div class="col-xs-3 col-md-3 col-sm-2">
+
+                                            <div class="clearfix">
+                                                <div class="pull-right comment-age">10 Days Ago..</div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="well well-sm comments-well">
+                                        <p>
+                                            Design Patterns Java(TM) Workbook features the twenty-three foundational design patterns
+                                            introduced in the classic book Design Patterns (Addison-Wesley, 1995). In this new, hands-on
+                                            workbook, the patterns are organized into five major categories: interfaces, responsibility,
+                                            construction, operations, and extensions. Each category begins with a chapter that reviews and
+                                            challenges your ability to apply facilities built into Java. These introductory sections are
+                                            followed by chapters that explain a particular pattern in detail, demonstrate the pattern in use
+                                            with UML diagrams and Java code, and provide programming problems for you to solve. 
+                                        </p>
+                                    </div>
+
+                                    <div class="clearfix">
+                                        <div class="pull-right">
+                                            <a class="btn btn-warning" href="#">
+                                                <span id="th2">
+                                                    <img src="image/icons8_Thumbs_Down_64px.png">
+                                                </span>
+                                                Approve
+                                            </a>
+
+                                            <a class="btn btn-danger" href="#">
+                                                <span id="th2">
+                                                    <img src="image/icons8_Cancel_52px_1.png">
+                                                </span>
+                                                Delete
+                                            </a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                    </div>
+                    <!--End unAproved-->
+
+
+                    <!--Start Tags-->
+                    <div class="row collapse" id="tags">
+                        <div class="col-md-4 dashboard-left-cell " id="article">
+                            <div class="admin-content-con">
+                                <header>
+                                    <h5>Create Tags</h5>
+
+                                </header>
+                                <form>
+                                    <div class="form-group">
+                                        <label>Add comma Separated Tag Below</label>
+                                        <p>
+                                            <textarea class="form-control" rows="3" placeholder="E:g- Html,Css,Php,Java,Python,Ruby,Perl,Cotlin">
+                                            
+                                            </textarea>
+                                        </p>
+                                        <p>
+                                            <button type="button" class="btn btn-large btn-block btn-primary">Save Tags..*</button>
+                                        </p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <!--right side-->
+                        <div class="col-md-8 dahboard-right-cell" id="article">
+                            <div class="admin-content-con">
+                                <header>
+                                    <h5>Tags</h5>
+                                </header>
+                                <table class="table table-striped table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Name</th>
+                                            <th>Status</th>
+                                            <th>Created</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>JAVA</td>
+                                            <td><span class="label label-success">in Use</span></td>
+                                            <td>2 Days Ago...</td>
+                                            <td><button type="button" class="btn btn-xs btn-warning"><span id="th2"><img src="image/icons8_Pencil_48px.png"></span>Edit</button>
+                                                <button type="button" class="btn btn-xs btn-danger disabled"><span id="th2"><img src="image/icons8_Cancel_52px_1.png"></span>Delete</button></td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>ANDROID</td>
+                                            <td><span class="label label-success">Not Use</span></td>
+                                            <td>5 Days Ago...</td>
+                                            <td><button type="button" class="btn btn-xs btn-warning"><span id="th2"><img src="image/icons8_Pencil_48px.png"></span>Edit</button>
+                                                <button type="button" class="btn btn-xs btn-danger"><span id="th2"><img src="image/icons8_Cancel_52px_1.png"></span>Delete</button></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--End Tags-->
+
+
+                    <!--Start Comments..-->
+                    <div id="article" class="comments collapse">
+                        <header class="clearfix"> 
+                            <div class="col-xs-5 col-sm-3 col-md-3"><b>All Commenters</b></div>
+                            <div class="col-xs-7 col-md-9 col-sm-9">
+                                <button type="button" class="btn btn-xs btn-primary pull-right">Create New Artice</button>
+                            </div>
+                        </header> 
+
+                        <div class="content-inner">
+                            <table class="table table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Full Name</th>
+                                        <th>E-mail</th>
+                                        <th>Status</th>
+                                        <th class="hidden-xs">Created</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>Hasika Sandaruan</td>
+                                        <td>hasikasandaruwan.mgtuk@gmail.com</td>
+                                        <td><span class="label label-success">Active</span></td>
+                                        <td class="hidden-xs">12-10-2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>2</td>
+                                        <td>Sasika Nirmala</td>
+                                        <td>sasikanirmal@gmail.com</td>
+                                        <td><span class="label label-success">Active</span></td>
+                                        <td class="hidden-xs">13-10-2015</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>3</td>
+                                        <td>Supun Chathuranga</td>
+                                        <td>SupunChathuranga@gmail.com</td>
+                                        <td><span class="label label-success">Active</span></td>
+                                        <td class="hidden-xs">15-10-2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>4</td>
+                                        <td>Nipun Maduranga</td>
+                                        <td>NipunMaduranga@gmail.com</td>
+                                        <td><span class="label label-success">Active</span></td>
+                                        <td class="hidden-xs">05-10-2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>5</td>
+                                        <td>Sumith Sanjeewa</td>
+                                        <td>Sumith Sanjeewa@gmail.com</td>
+                                        <td><span class="label label-warning">De-Active</td>
+                                        <td class="hidden-xs">06-10-2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>6</td>
+                                        <td>Rsaika Pushpa Kumara</td>
+                                        <td>RsaikaPushpaKumara@gmail.com</td>
+                                        <td><span class="label label-success">Active</span></td>
+                                        <td class="hidden-xs">01-10-2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>7</td>
+                                        <td>Roshan Pushpa Kumara</td>
+                                        <td>RoshanPushpaKumara@gmail.com</td>
+                                        <td><span class="label label-warning">De-Active</span></td>
+                                        <td class="hidden-xs">10-10-2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>8</td>
+                                        <td>Dilini Sithara</td>
+                                        <td>DiliniSithara@gmail.com</td>
+                                        <td><span class="label label-success">Active</span></td>
+                                        <td class="hidden-xs">05-10-2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>9</td>
+                                        <td>Ishara Seuwandi</td>
+                                        <td>IsharaSeuwandi@gmail.com</td>
+                                        <td><span class="label label-warning">De-Active</span></td>
+                                        <td class="hidden-xs">08-10-2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>10</td>
+                                        <td>Niluka Damayanthi</td>
+                                        <td>NilukaDamayanthi@gmail.com</td>
+                                        <td><span class="label label-success">Active</span></td>
+                                        <td class="hidden-xs">09-10-2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>11</td>
+                                        <td>Indunil Harshana</td>
+                                        <td>IndunilHarshana.mgtuk@gmail.com</td>
+                                        <td><span class="label label-success">Active</span></td>
+                                        <td class="hidden-xs">20-10-2018</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>12</td>
+                                        <td>Kanchana Sandamali</td>
+                                        <td>KanchanaSandamali@gmail.com</td>
+                                        <td><span class="label label-warning">De-Active</span></td>
+                                        <td class="hidden-xs">20-10-2018</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                    <!--End Comments..-->
+
+                    <!--start Settings-->
+                    <div id="article" class="collapse settings">
+                        <header class="clearfix">
+                            <h2 class="pagetitle pull-left">General Blog Setting</h2>
+
+                        </header>
+                        <div class="content-inner">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <form>
+                                        <div class="settings-row">
+                                            <h3>Site Name</h3>
+                                            <p>This Is Permanently shown on the left corner of navigation.</p>
+                                            <div class="form-group">
+                                                <input type="text" id="input" class="form-control" title="">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="settings-row">
+                                            <h3>Posts Per Page</h3>
+                                            <p>Control Total Number Of Blogs Shown On The Blog Index Page.</p>
+                                            <div class="form-group">
+                                                <input type="number" id="input" class="form-control" value="" min="5" max="20">
+                                            </div>
+                                        </div>
+
+
+                                        <div class="settings-row">
+                                            <h3>Under Maintenance</h3>
+                                            <p>Redirect All Request To a Holding Page</p>
+                                            <div class="checkbox">
+                                                <label>
+                                                    <input type="checkbox" value="">
+                                                    blog Is Under Maintenance
+                                                </label>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="settings-row">
+                                            <h3>Prevent Commenting</h3>
+                                            <p>Prevent Or enabled Visitors From Living Comment.</p>
+                                            <div class="checkbox">
+                                                <select id="input" class="form-control">
+                                                    <option value="">active</option>
+                                                    <option value="">De-active</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="settings-row">
+                                            <h3>Tag Visibility</h3>
+                                            <p>Enable Or disabled Tag Visibility on all Blog Post</p>
+                                            <div class="checkbox">
+                                                <select id="input" class="form-control">
+                                                    <option value="">active</option>
+                                                    <option value="">De-active</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary">Save Settings</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Settings-->
+                    <!--  Start DashBoard Container-->
+                    <div id="dashboard-con">
+                        <div class="row">
+                            <div class="col-md-6 dashboard-left-cell2">
+                                <div class="admin-content-con2">
+                                    <header>
+                                        <h5 class="pull-left">
+                                            Articles
+                                        </h5>
+                                        <a class="btn btn-xs btn-primary pull-right" role="button"> Create New Article</a>
+                                    </header>
+                                    <table class="table-striped table">
+                                        <thead>
+                                            <tr>
+                                                <th>title</th>
+                                                <th>Replies</th>
+                                                <th>Date</th>
+                                                <th>Action</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>This The First Post Of Many to Come</td>
+                                                <td>20</td>
+                                                <td>2 days Ago</td>
+                                                <td>
+
+                                                    <a class="btn btn-xs btn-primary" href="#">View</a>
+                                                    <a class="btn btn-xs btn-danger" href="#">Del</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>This The First Post Of Many to Come</td>
+                                                <td>20</td>
+                                                <td>2 days Ago</td>
+                                                <td>
+
+                                                    <a class="btn btn-xs btn-primary" href="#">View</a>
+                                                    <a class="btn btn-xs btn-danger" href="#">Del</a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td>This The First Post Of Many to Come</td>
+                                                <td>20</td>
+                                                <td>2 days Ago</td>
+                                                <td>
+
+                                                    <a class="btn btn-xs btn-primary" href="#">View</a>
+                                                    <a class="btn btn-xs btn-danger" href="#">Del</a>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>This The First Post Of Many to Come</td>
+                                                <td>20</td>
+                                                <td>2 days Ago</td>
+                                                <td>
+
+                                                    <a class="btn btn-xs btn-primary" href="#">View</a>
+                                                    <a class="btn btn-xs btn-danger" href="#">Del</a>
+                                                </td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>This The First Post Of Many to Come</td>
+                                                <td>20</td>
+                                                <td>2 days Ago</td>
+                                                <td>
+
+                                                    <a class="btn btn-xs btn-primary" href="#">View</a>
+                                                    <a class="btn btn-xs btn-danger" href="#">Del</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>This The First Post Of Many to Come</td>
+                                                <td>20</td>
+                                                <td>2 days Ago</td>
+                                                <td>
+
+                                                    <a class="btn btn-xs btn-primary" href="#">View</a>
+                                                    <a class="btn btn-xs btn-danger" href="#">Del</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>This The First Post Of Many to Come</td>
+                                                <td>20</td>
+                                                <td>2 days Ago</td>
+                                                <td>
+
+                                                    <a class="btn btn-xs btn-primary" href="#">View</a>
+                                                    <a class="btn btn-xs btn-danger" href="#">Del</a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td>This The First Post Of Many to Come</td>
+                                                <td>20</td>
+                                                <td>2 days Ago</td>
+                                                <td>
+
+                                                    <a class="btn btn-xs btn-primary" href="#">View</a>
+                                                    <a class="btn btn-xs btn-danger" href="#">Del</a>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                    <div class="clearfix">
+                                        <a href="#" class="text-link pull-right" >View All Article</a>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                            <div class="col-md-6 dahboard-right-cell2">
+                                <div class="admin-content-con2">
+                                    <header>
+                                        <h5>Comment's</h5>
+                                    </header>
+                                    <div class="comment-head-dash clearfix">
+                                        <div class="comenter-name-dash pull-left">
+                                            Hasika Sandaruwan
+                                        </div>
+                                        <div class="days-dash pull-right">2 Days Ago</div>
+                                    </div>
+                                    <p class="comment-dash">
+                                        We strive to update the contents of our website and tutorials as timely and as
+                                        precisely as possible, however, the contents may contain inaccuracies or errors.
+                                        Tutorials Point (I) Pvt. Ltd. provides no guarantee regarding the accuracy,
+                                        timeliness or completeness of our website or its contents including this tutorial. If
+                                        you discover any errors on our website or in this tutorial, please notify us at 
+                                    </p>
+                                    <small class="comment-date-dash"> tody 5:20pm 2018/02/20</small>
+                                    <hr>
+
+                                    <div class="comment-head-dash clearfix">
+                                        <div class="comenter-name-dash pull-left">
+                                            Hasika Sandaruwan
+                                        </div>
+                                        <div class="days-dash pull-right">2 Days Ago</div>
+                                    </div>
+                                    <p class="comment-dash">
+                                        We strive to update the contents of our website and tutorials as timely and as
+                                        precisely as possible, however, the contents may contain inaccuracies or errors.
+                                        Tutorials Point (I) Pvt. Ltd. provides no guarantee regarding the accuracy,
+                                        timeliness or completeness of our website or its contents including this tutorial. If
+                                        you discover any errors on our website or in this tutorial, please notify us at 
+                                    </p>
+                                    <small class="comment-date-dash"> tody 5:20pm 2018/02/20</small>
+                                    <hr>
+                                    <div class="clearfix">
+                                        <a href="#" class="pull-right text-link">Vie All Comments</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="admin-content-con2 clearfix">
+                                    <header>
+                                        <h5>Commenter's</h5>
+                                    </header>
+                                    <table class="table table-bordered">
+                                        <thead>
+                                            <tr>
+                                                <th>#</th>
+                                                <th>Full Name</th>
+                                                <th>E-Mail</th>
+                                                <th>Status</th>
+                                                <th>Created</th>
+                                                <th>Actions</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>Hasika Sandaruwan</td>
+                                                <td>HasikaSandaruwan@gmail.com</td>
+                                                <td><a href="#" class="label label-default">Pending</a></td>
+                                                <td>Today 5:00pm-1995-10-16</td>
+                                                <td><a href="#" class="label label-danger">Delete</a></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>2</td>
+                                                <td>Prasanna Bandara</td>
+                                                <td>PrasannaBandara@gmail.com</td>
+                                                <td><a href="#" class="label label-success">Success</a></td>
+                                                <td>Today 5:00pm-1995-10-16</td>
+                                                <td><a href="#" class="label label-danger">Delete</a></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>3</td>
+                                                <td>Ruwanthika Sandamali</td>
+                                                <td>RuwanthikaSandamali@gmail.com</td>
+                                                <td><a href="#" class="label label-default">Pending</a></td>
+                                                <td>Today 5:00pm-1995-10-16</td>
+                                                <td><a href="#" class="label label-danger">Delete</a></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>4</td>
+                                                <td>Suresha Kumari</td>
+                                                <td>SureshaKumari@gmail.com</td>
+                                                <td><a href="#" class="label label-primary">primary</a></td>
+                                                <td>Today 5:00pm-1995-10-16</td>
+                                                <td><a href="#" class="label label-danger">Delete</a></td>
+                                            </tr>
+
+
+                                            <tr>
+                                                <td>5</td>
+                                                <td>Sasika Nirmal</td>
+                                                <td>Sasika Nirmal@gmail.com</td>
+                                                <td><a href="#" class="label label-default">Pending</a></td>
+                                                <td>Today 5:00pm-1995-10-16</td>
+                                                <td><a href="#" class="label label-danger">Delete</a></td>
+                                            </tr>
+
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  End DashBoard Container-->
+
+                    <!--  Start Chart Aria-->
+                    <div class="charts collapse" onload="drow()">
+                        <div class="content" id="article">
+
+                            <div class="row">
+
+                                <div class="chart pull-left" data-percent="73">
+                                    <b class="text-center pull-left" style="margin-left: 20px;">73%</b>
+                                </div>
+
+                                <div class="chart pull-left" data-percent="90">
+                                    <b class="text-center pull-left" style="margin-left: 20px;">90%</b>
+                                </div>
+
+                                <div class="chart pull-left" data-percent="85">
+                                    <b class="text-center pull-left" style="margin-left: 20px;">85%</b>
+                                </div>
+
+                                <div class="chart pull-left" data-percent="75">
+                                    <b class="text-center pull-left" style="margin-left: 20px;">75%</b>
+                                </div>
+
+                                <div class="chart pull-left" data-percent="89">
+                                    <b class="text-center pull-left" style="margin-left: 20px;">89%</b>
+                                </div>
+
+                                <div class="chart pull-left" data-percent="80">
+                                    <b class="text-center pull-left" style="margin-left: 20px;">80%</b>
+                                </div>
+
+                                <div class="chart pull-left" data-percent="70">
+                                    <b class="text-center pull-left" style="margin-left: 20px;">70%</b>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!----------------------------------------->
+                        <div id="article">
+                            <b>Enter The Values Seperated By A Comma</b><br>
+                            <input type="text" name="number" id="num" class="form-control" placeholder="Eg: 23,45,76"><br>
+                            <input type="button" class="btn btn-primary" value="Submit" name="submit" onclick="draw()">
+                            <input type="button" class="btn btn-warning" value="Clear" name="clear" onclick="reset()"><br><br>
+                            <canvas id="mycanvas" height="200" width="500" style="border: 1px solid #c3c3c3;"></canvas>
+                            <canvas id="myChart" width="400" height="400"></canvas>
+                        </div>
+                        <!----------------------------------------->
+                        <!--
+                                                <canvas id="mycanvas2" width="256" height="256" style="border: 1px solid #c3c3c3;"></canvas>
+                        -->
+
+
+
+                    </div>
+
+                    <!--  End Chart Aria--> 
+
+                    <!--  Start About Aria--> 
+
+                    <div class="collapse mydata">
+                        <div class="row">
+                            <span>
+                                <img id="img" alt="hasika" class="img-circle" src="image/hasika.jpg">
+                                <b>
+                                    <u class="text-success">All the content and graphics published in this e-book are the property of Tutorials
+                                        Point (I) Pvt. Ltd. The user of this e-book is prohibited to reuse, retain</u>, copy,
+                                    Некоторые иностранцы думают, что в России медведи ходят
+                                    по улицам. Конечно, это неправда! Медведи живут в лесу 
+                                    и не любят людей.
+                                    Some foreigners think that in Russia bears walk along
+                                    the streets. Of course, that is not true! Bears 
+                                    live in forests and do not like people.
+                                    Встреча с медведем может быть очень опасна. Русские
+                                    люди любят ходить в лес и собирать грибы и ягоды. Они делают это с осторожностью, так как медведи тоже
+                                    очень любят ягоды и могут напасть на человека. Медведь ест всё: ягоды, рыбу, мясо и даже насекомых. Особенно он любит мёд.
+                                </b>
+                            </span>
+                            <div id="article" class="text-center text-primary">
+                                <h5><b>First Name :</b> Hasika</h5>
+                                <h5><b>Last Name :</b>Sandaruwan</h5>
+                                <h5><b>Address :</b>Colombo</h5>
+                                <h5><b>School :</b>D.C.C</h5>
+                                <h5><b>Institute :</b>IJSE,SLIT,JAVA_INSTITUTE,NSBM</h5>
+                                <h5><b>Contact :</b>123</h5>
+                                <h5><b>DOB :</b>1995-10-16</h5>
+                                <h5><b>E-Mail :</b>hasikasandaruwan.mgtuk@gmail.com</h5>
+                                <h5><b>Gender :</b>Male</h5>
+
+                                <div class="form-group">
+                                    <input type="text" placeholder="Comment Here..">
+                                    <input type="button" value="Submit" class="btn btn-primary btn-sm">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!--  End About Aria--> 
+
+
+                    <div class="row">
+                        <footer class="clearfix" id="admin-footer">
+                            <div class="pull-left"><b>CopyRight</b>&COPY; 2018(Hasika Sandaruwan)</div>
+                            <div class="pull-right"><b>Некоторые иностранцы думают, что  </b></div>
+                        </footer>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <script src="js/jquery-3.3.1.js"></script>
+        <script src="choosen/chosen.jquery.min.js"></script>
+        <script src="summernote/summernote.min.js"></script>
+        <script src="pichart/jquery.easypiechart.js"></script>
+        <script src="chart/Chart.js"></script>
+        <script src="chart/Chart.min.js"></script>
+        <script>
+                                var i = 1;
+                                function load(x) {
+                                    if (i === 1) {
+
+                                        $('#dashboard-con').hide();
+                                        i = x;
+                                    } else if (i === 2) {
+                                        $('#new-article').hide();
+                                        i = x;
+                                    } else if (i === 3) {
+                                        $('#article').hide();
+                                        i = x;
+                                    } else if (i === 4) {
+                                        $('.approved').hide();
+                                        i = x;
+                                    } else if (i === 5) {
+                                        $('.unapproved').hide();
+                                        i = x;
+
+                                    } else if (i === 6) {
+                                        $('.comments').hide();
+                                        i = x;
+
+                                    } else if (i === 7) {
+                                        $('#tags').hide();
+                                        i = x;
+                                    } else if (i === 8) {
+                                        $('.settings').hide();
+                                        i = x;
+                                    } else if (i === 9) {
+                                        $('.charts').hide();
+                                        i = x;
+                                    } else if (i === 10) {
+                                        $('.mydata').hide();
+                                        i = x;
+                                    }
+                                }
+
+                                $(document).ready(function () {
+                                    $('#showarticle').click(function () {
+
+                                        $('#collapse-post').toggle('fade');
+                                    });
+
+                                    $('#showcoments').click(function () {
+                                        $('#collapse-comment').toggle('fade');
+                                    });
+
+                                    $('[data-toggle="offcanvas" ]').click(function () {
+                                        $('#side-menu').toggleClass('hidden-xs');
+                                    });
+                                    //load new article
+                                    $('#createnew').click(function () {
+                                        load(2);
+                                        $('#new-article').toggle('fade');
+                                    });
+                                    //load view article
+                                    $('#viewarticle').click(function () {
+                                        load(3);
+                                        $('#article').toggle('fade');
+                                    });
+                                    //load approved
+                                    $('#approved').click(function () {
+                                        load(4);
+                                        $('.approved').toggle('fade');
+                                    });
+
+                                    //load Un-approved
+                                    $('#unapproved').click(function () {
+                                        load(5);
+                                        $('.unapproved').toggle('fade');
+                                    });
+                                    // load all tags
+                                    $('#openttags').click(function () {
+                                        load(7);
+                                        $('#tags').toggle('fade');
+                                    });
+                                    //load All comments
+                                    $('#loadcomments').click(function () {
+                                        load(6);
+                                        $('.comments').toggle('fade');
+                                    });
+                                    // load settings
+                                    $('#loadsetting').click(function () {
+                                        load(8);
+                                        $('.settings').toggle('fade');
+                                    });
+                                    // load Main Menu
+                                    $('#mainmenu').click(function () {
+                                        load(1);
+                                        $('#dashboard-con').toggle('fade');
+                                    });
+
+                                    // load Charts
+                                    $('#loadchart').click(function () {
+                                        load(9);
+                                        $('.charts').toggle('fade');
+                                    });
+
+                                    // load My Data
+                                    $('#loadmydata').click(function () {
+                                        load(10);
+                                        $('.mydata').toggle('fade');
+                                    });
+                                });
+        </script>
+
+        <script type="text/javascript">
+            var config = {
+                '.chosen-select': {},
+                '.chosen-select-deselect': {allow_single_deselect: true},
+                '.chosen-select-no-single': {disable_search_threshold: 10},
+                '.chosen-select-no-result': {no_result_text: 'Oops,nothing Found!'},
+                '.chosen-select-width': {width: "95%"}
+            };
+            for (var selector in config) {
+                $(selector).chosen(config[selector]);
+            }
+        </script>
+        <script type="text/javascript">
+            $('.summernote').summernote({
+                height: 200
+            });
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                $('.chart').easyPieChart({
+
+                });
+            });
+        </script>
+
+
+        <!-- load All Javascript chart-->
+        <script type="text/javascript">
+            function draw() {
+
+                var n = document.getElementById("num").value;
+                var graphValues = n.split(',');
+
+                var canvas = document.getElementById('mycanvas');
+                var ctx = canvas.getContext('2d');
+
+                var width = 40;
+                var x = 50;
+
+                ctx.fillStyle = "#008080";
+
+                for (var i = 0; i < graphValues.length; i++) {
+                    var h = graphValues[i];
+                    ctx.fillRect(x, canvas.height - h, width, h);
+                    x += width + 15;
+                }
+            }
+
+            function reset() {
+                var canvas = document.getElementById('mycanvas');
+                var ctx = canvas.getContext('2d');
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+            }
+
+            $(document).ready(function () {
+
+
+
+                var x = document.getElementById("mycanvas2").getContext('2d');
+
+                var data = [
+                    {
+                        value: 30,
+                        color: "cornflowerblue",
+                        highlight: "lightskyblue",
+                        label: "Obese"
+                    },
+                    {
+                        value: 90,
+                        color: "chocolate",
+                        highlight: "papayawhip",
+                        label: "Over-Weight"
+                    },
+                    {
+                        value: 240,
+                        color: "darkorange",
+                        highlight: "orange",
+                        label: "Normal-Weight"
+                    }
+                ];
+                try {
+                    var piechart = new Chart(x).Pie(data);
+                } catch (exception) {
+
+                }
+
+
+
+            });
+        </script>
+
+
+        <script>
+            var ctx = document.getElementById("myChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+                    datasets: [{
+                            label: '# of Votes',
+                            data: [12, 19, 3, 5, 2, 3],
+                            backgroundColor: [
+                                'rgba(255, 99, 132, 0.2)',
+                                'rgba(54, 162, 235, 0.2)',
+                                'rgba(255, 206, 86, 0.2)',
+                                'rgba(75, 192, 192, 0.2)',
+                                'rgba(153, 102, 255, 0.2)',
+                                'rgba(255, 159, 64, 0.2)'
+                            ],
+                            borderColor: [
+                                'rgba(255,99,132,1)',
+                                'rgba(54, 162, 235, 1)',
+                                'rgba(255, 206, 86, 1)',
+                                'rgba(75, 192, 192, 1)',
+                                'rgba(153, 102, 255, 1)',
+                                'rgba(255, 159, 64, 1)'
+                            ],
+                            borderWidth: 1
+                        }]
+                },
+                options: {
+                    scales: {
+                        yAxes: [{
+                                ticks: {
+                                    beginAtZero: true
+                                }
+                            }]
+                    }
+                }
+            });
+        </script>
+
+    </body>
+</html>
